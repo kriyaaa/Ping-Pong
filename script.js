@@ -1,3 +1,16 @@
+window.addEventListener("load", function(){
+	setTimeout(
+		function open(event){
+			document.querySelector(".popup").style.display = "block";
+		},
+		700
+	)
+});
+
+document.querySelector("#close").addEventListener("click", function(){
+	document.querySelector(".popup").style.display = "none";
+})
+
 import Ball from "./Ball.js";
 import Paddle from "./Paddle.js";
 
